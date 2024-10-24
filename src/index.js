@@ -17,23 +17,3 @@ connectDB()
   .catch((error) => {
     console.error("MongoDB connection Failed !!! ", error);
   });
-
-/*
-(async () => {
-  try {
-    await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`);
-
-    app.on("error", (error) => {
-      console.error("ERROR: ", error);
-      throw error;
-    });
-
-    app.listen(`${process.env.PORT}`, () => {
-      console.log(`App is listening on Port ${process.env.PORT}`);
-    });
-  } catch (error) {
-    console.error("ERROR: ", error);
-    throw error;
-  }
-})();
-*/
